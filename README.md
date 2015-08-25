@@ -1,16 +1,16 @@
 ## Deploy a yeoman-angular app to gh-pages with Codeship CI
 
-### Delete repository deploy key
+#### 1. Delete repository deploy key in github
 
-### Add deploy key in codeship-> general -> SSH public key to github bot account
+#### 2. Add deploy key in codeship-> general -> SSH public key to github bot account
 
-### Make an initial push to gh-pages branch
+#### 3. Make an initial push to gh-pages branch
 
 ```Shell
 git subtree push --prefix dist origin gh-pages
 ```
 
-### Setup deploy script in codeship
+#### 4. Setup deploy script in codeship
 
 ```Shell
 git config --global user.email "{{email of the bot account}}"
@@ -21,7 +21,7 @@ git push {{full repo address*}} `git subtree split --prefix dist master`:gh-page
 
 * its important that **full repo address** is the complete git repo url not just the name of the remote
 
-### Setup base-href correctly
+#### 5. Setup base-href correctly
 
 * Install grunt-processhtml
 
