@@ -73,7 +73,7 @@ processhtml: {
 * Add base href in the head of your index.html file
 
 ```HTML
-<!-- process:[href]:dist /camino-al-exito/ -->
+<!-- process:[href]:dist /{{repo-name}}/ -->
 <base href="/" />
 <!-- /process -->
 ```
